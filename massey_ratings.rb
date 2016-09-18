@@ -17,13 +17,6 @@ browser.button(id: 'showVegas').click
 doc = Nokogiri::HTML(browser.html)
 browser.close
 
-
-
-def calculate_point_spread(row)
-  {team_name: team_name_1, team1_line: team_2_line}
-  {team_name: team_name_2, team1_line: team_2_line}
-end
-
 data = []
 
 rows = doc.css('.bodyrow')
@@ -34,7 +27,7 @@ rows.each do |row|
   team_name_2       = row.css('.fteam').first.css('a').last.children.text
   team_1_line       = row.css('.fscore')[1].children.first.text.to_f
   team_2_line       = row.css('.fscore')[1].children.last.text.to_f
-  massey_line      = row.css('.fscore').css('.ltred').text.to_f
+  massey_line       = row.css('.fscore').css('.ltred').text.to_f
   vegas_line        = row.css('.fscore').css('.ltgreen').text.to_f
   vegas_over_under  = row.css('.fscore').last.children.first.text.to_f
   massey_over_under = row.css('.fscore').last.children.last.text.to_f
