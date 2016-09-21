@@ -4,6 +4,6 @@ A command line tool that uses [Massey Ratings](masseyratings.com) and the Vegas 
 #Install
 * Download the files
 * Open up terminal and navigate to the massey_ratings folder
-* Type in bundle install in terminal
+* Type in `bundle install` in terminal
 * Run `ruby massey_ratings.rb`
 * massey_ratings will output the lines that are most advantageous to gamble on. 
