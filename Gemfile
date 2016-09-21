@@ -6,6 +6,6 @@ source "https://rubygems.org"
 gem 'pry'
 gem 'httparty'
 gem 'mechanize'
-gem 'Nokogiri'
+gem 'nokogiri', "1.6.7"
 gem 'watir'
 gem "selenium-webdriver", "~> 2.38.0"
