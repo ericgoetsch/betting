@@ -6,7 +6,6 @@ require 'open-uri'
 require 'watir'
 require './get_url.rb'
 
-puts "Please enter the url from masseyratings.com and hit enter"
 url = get_url
 puts "Please set the point differential between massey ratings and vegas lines that you would like to view"
 pd = gets.chomp.to_i
